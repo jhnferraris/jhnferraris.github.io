@@ -1,6 +1,6 @@
 var ghpages = require('gh-pages');
 
-ghpages.publish('build', {
+ghpages.publish('public', {
   repo: 'git@github.com:jhnferraris/blog.git',
   silent: true
 });
