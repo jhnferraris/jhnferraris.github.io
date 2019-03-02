@@ -1,7 +1,6 @@
 ---
 title: "Hello World"
 date: "2018-10-04"
-comments: true
 ---
 
 When learning a new language or a framework, any student or programmer must start with a "Hello World".
