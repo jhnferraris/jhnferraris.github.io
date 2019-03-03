@@ -40,7 +40,8 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in Philippines building useful things.
+              <strong>{author}</strong>.{` `}
+              Codes for a living and for fun. Reads fiction and self-help on the side. Half Marathoner
               {` `}
               <a style={{ boxShadow: 'none', textDecoration: 'none', paddingLeft: '5px' }} className="social-links" href={`mailto:${social.mail}`}>
                 <FaEnvelope />

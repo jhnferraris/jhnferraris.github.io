@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Codes, books, and adventures`,
+    title: `codes, books, & adventures`,
     author: `John Michael Ferraris`,
     description: `Thought dumps`,
     siteUrl: `https://jhnferraris.dev`,
