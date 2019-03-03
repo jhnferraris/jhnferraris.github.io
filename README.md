@@ -1,4 +1,4 @@
-# jhnferraris.dev/blog
+# jhnferraris.dev
 
-Contains the codes for https://jhnferraris.dev/blog
+Contains the codes for https://jhnferraris.dev
 

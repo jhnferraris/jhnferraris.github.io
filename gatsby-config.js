@@ -1,10 +1,9 @@
 module.exports = {
-  pathPrefix: '/blog',
   siteMetadata: {
     title: `Codes, books, and adventures`,
     author: `John Michael Ferraris`,
     description: `Thought dumps`,
-    siteUrl: `https://jhnferraris.dev/blog`,
+    siteUrl: `https://jhnferraris.dev`,
     social: {
       twitter: `jhnferraris`,
       mail: 'contact@jhnferraris.dev',
