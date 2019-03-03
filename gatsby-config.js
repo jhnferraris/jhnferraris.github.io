@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `codes, books, & adventures`,
     author: `John Michael Ferraris`,
-    description: `Thought dumps`,
+    description: `Codes for a living and for fun. Reads fiction and self-help on the side. Runs fast enough to survive a zombie apocalypse`,
     siteUrl: `https://jhnferraris.dev`,
     social: {
       twitter: `jhnferraris`,

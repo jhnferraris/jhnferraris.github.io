@@ -40,23 +40,25 @@ function Bio() {
               }}
             />
             <p>
-              <strong>{author}</strong>.{` `}
-              Codes for a living and for fun. Reads fiction and self-help on the side. Half Marathoner
+              <strong>{author}</strong>
+              <br />
+              Codes for a living and for fun. Reads fiction and self-help on the side. Runs fast enough to survive a zombie apocalypse.
               {` `}
-              <a style={{ boxShadow: 'none', textDecoration: 'none', paddingLeft: '5px' }} className="social-links" href={`mailto:${social.mail}`}>
+              <br />
+              <a style={{ boxShadow: 'none', textDecoration: 'none', paddingRight: '5px' }} className="social-links" href={`mailto:${social.mail}`}>
                 <FaEnvelope />
               </a>
-              <a style={{ boxShadow: 'none', textDecoration: 'none', paddingLeft: '5px' }} href={`https://twitter.com/${social.twitter}`}>
+              <a style={{ boxShadow: 'none', textDecoration: 'none', paddingRight: '5px' }} href={`https://twitter.com/${social.twitter}`}>
                 <FaTwitterSquare />
               </a>
               <a
-                style={{ boxShadow: 'none', textDecoration: 'none', paddingLeft: '5px' }}
+                style={{ boxShadow: 'none', textDecoration: 'none', paddingRight: '5px' }}
                 className="social-links"
                 href={`https://github.com/${social.github}`}
               >
                 <GoMarkGithub />
               </a>
-              <a style={{ boxShadow: 'none', textDecoration: 'none', paddingLeft: '5px' }} className="social-links" href={social.cv}>
+              <a style={{ boxShadow: 'none', textDecoration: 'none', paddingRight: '5px' }} className="social-links" href={social.cv}>
                 <FaList />
               </a>
             </p>
