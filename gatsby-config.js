@@ -6,7 +6,10 @@ module.exports = {
     description: `Thought dumps`,
     siteUrl: `https://jhnferraris.dev/blog`,
     social: {
-      twitter: `jhnferraris`
+      twitter: `jhnferraris`,
+      mail: 'contact@jhnferraris.dev',
+      github: 'jhnferraris',
+      cv: 'https://jhnferraris.dev/cv'
     }
   },
   plugins: [

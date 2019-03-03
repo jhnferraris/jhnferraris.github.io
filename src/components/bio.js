@@ -10,6 +10,8 @@ import { StaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 
 import { rhythm } from '../utils/typography';
+import { FaTwitterSquare, FaList, FaEnvelope } from 'react-icons/fa';
+import { GoMarkGithub } from 'react-icons/go';
 
 function Bio() {
   return (
@@ -40,7 +42,22 @@ function Bio() {
             <p>
               Written by <strong>{author}</strong> who lives and works in Philippines building useful things.
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>You should follow him on Twitter</a>
+              <a style={{ boxShadow: 'none', textDecoration: 'none', paddingLeft: '5px' }} className="social-links" href={`mailto:${social.mail}`}>
+                <FaEnvelope />
+              </a>
+              <a style={{ boxShadow: 'none', textDecoration: 'none', paddingLeft: '5px' }} href={`https://twitter.com/${social.twitter}`}>
+                <FaTwitterSquare />
+              </a>
+              <a
+                style={{ boxShadow: 'none', textDecoration: 'none', paddingLeft: '5px' }}
+                className="social-links"
+                href={`https://github.com/${social.github}`}
+              >
+                <GoMarkGithub />
+              </a>
+              <a style={{ boxShadow: 'none', textDecoration: 'none', paddingLeft: '5px' }} className="social-links" href={social.cv}>
+                <FaList />
+              </a>
             </p>
           </div>
         );
@@ -62,7 +79,10 @@ const bioQuery = graphql`
       siteMetadata {
         author
         social {
+          mail
           twitter
+          github
+          cv
         }
       }
     }
