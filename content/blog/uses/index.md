@@ -22,7 +22,7 @@ Here's a list of what I currently use in software development:
   * [Node Version Manager](https://github.com/creationix/nvm)
 * Editors
   * [VS Code](https://code.visualstudio.com) for general purpose coding
-  * [Vim](https://www.vim.org/) for accessing remote files
+  * [Vim](https://www.vim.org/) for editing remote files
 * Terminal
   * [iTerm](https://iterm2.com/)
   * [bash-it](https://github.com/Bash-it/bash-it) with [bakke](https://github.com/Bash-it/bash-it/wiki/Themes#bakke) theme
