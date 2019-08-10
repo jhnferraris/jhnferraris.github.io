@@ -10,29 +10,29 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props;
     const siteTitle = data.site.siteMetadata.title;
-    const posts = data.allMarkdownRemark.edges;
+    const posts = data.allStrapiArticle.edges;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={siteTitle} keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
         <Bio />
         {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug;
+          const title = node.title;
           return (
-            <div key={node.fields.slug}>
+            <div key={node.id}>
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4)
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <Link style={{ boxShadow: `none` }} to={node.slug}>
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small>{node.date_created}</small>
               <p
                 dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt
+                  __html: node.description || node.excerpt
                 }}
               />
             </div>
@@ -52,18 +52,15 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allStrapiArticle {
       edges {
         node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-          }
+          id
+          slug
+          title
+          content
+          date_created
+          description
         }
       }
     }

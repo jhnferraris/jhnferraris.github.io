@@ -13,10 +13,15 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-strapi',
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`
+        apiURL: 'https://jhnferraris-cms.herokuapp.com',
+        contentTypes: [
+          // List of the Content Types you want to be able to request from Gatsby.
+          'article',
+          'user'
+        ],
+        queryLimit: 1000
       }
     },
     {
@@ -56,7 +61,6 @@ module.exports = {
         trackingId: 'UA-127060662-1'
       }
     },
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
