@@ -52,7 +52,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allStrapiArticle(sort: { order: DESC, fields: created_at }) {
+    allStrapiArticle(sort: { order: DESC, fields: created_at }, filter: { published: { eq: 1 } }) {
       edges {
         node {
           id
