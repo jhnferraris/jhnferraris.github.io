@@ -8,7 +8,7 @@ module.exports = {
       twitter: `jhnferraris`,
       mail: 'contact@jhnferraris.dev',
       github: 'jhnferraris',
-      cv: 'https://jhnferraris.dev/cv'
+      cv: 'https://cv.jhnferraris.dev'
     }
   },
   plugins: [
