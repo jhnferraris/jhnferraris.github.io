@@ -4,7 +4,7 @@
   "version": "2.0.1",
   "homepage": "https://jhnferraris.dev",
   "dependencies": {
-    "gatsby": "^2.1.19",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.0.30",
     "gatsby-plugin-feed": "^2.0.14",
     "gatsby-plugin-manifest": "^2.0.20",
